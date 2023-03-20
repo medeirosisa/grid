@@ -11,6 +11,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15vw 70vw 15vw;
+    grid-template-areas: "m h h" "m c c" "m f f";
+    grid-gap: 10px;
 }
 
 header, nav, article, footer{
@@ -24,20 +26,21 @@ header, nav, article, footer{
 
 header {
     background-color: violet;
-    grid-column: 3 span;
+    grid-area: h;
+   
 }
 
 nav {
     background-color: blueviolet;
-    grid-column: 1span;
+   grid-area: m;
 }
 
 article {
     background-color: plum;
-    grid-column: 2 span;
+  grid-area: c;
 }
 
 footer{
     background-color: darkmagenta;
-    grid-column: 3 span;
+    grid-area: f;
 }
